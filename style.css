@@ -13,6 +13,21 @@
     padding-right: 10px
 }
 
+.left {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'M PLUIS 1p', sans-serif;
+    font-weight: 600;
+    float: left;
+    text-align: center;
+}
+
+.left:hover {
+    color: #d1c9c9;
+    transition: 0.3s ease-out;
+}
+
 .navbutton:hover {
     background-color: #233957;
     transition: 0.3s ease-out;
@@ -91,11 +106,24 @@ hr.rounded {
     font-size: 30px;
     font-weight: 200;
 }
+
 .productimg {
     margin-right: 2.0%;
     width: 22%;
     height: 22%;
     border-radius: 15px;
+}
+
+.container {
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.textcontainer {
+    margin-left: 15%;
 }
 
 .productimg:hover {
@@ -109,19 +137,11 @@ hr.rounded {
     height: 10%;
 }
 
-.container {
-    margin-top: 2%;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 100%;
-    display: flex;
-}
 
 .productdesc {
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 23px;
-    margin-top: -2%;
-    margin-right: 2.0%;
+    margin-right: 16%;
     width: 22%;
     text-decoration: none;
     color: #2a4366;
