@@ -1,3 +1,11 @@
+.nav {
+    display: flex;
+}
+
+.navbutton.left {
+    margin-right: auto;
+}
+
 .navbutton {
     font-size: 16px;
     color: #ffffff;
@@ -5,31 +13,17 @@
     margin-right: 10px;
     position: relative;
     font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     background-color: #324c70;
     border-radius: 15px;
     padding: 5px;
     padding-left: 10px;
-    padding-right: 10px
-}
+    padding-right: 10px;
 
-.lgs {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-family: 'M PLUIS 1p', sans-serif;
-    font-weight: 600;
-    float: left;
-    text-align: center;
-}
-
-.lgs:hover {
-    color: #d1c9c9;
-    transition: 0.3s ease-out;
 }
 
 .navbutton:hover {
-    background-color: #233957;
+    background-color: #273e5d;
     transition: 0.3s ease-out;
     color: #d1c9c9;
 }
@@ -40,9 +34,9 @@
 
 .amogus {
     position: absolute;
-    margin-top: 165px;
-    margin-left: 13px;
-    width: 100px;
+    margin-top: 110px;
+    margin-left: 920px;
+    width: 80px;
     opacity: 0;
 }
 
@@ -64,16 +58,6 @@
 .body {
     height: 100%;
     width: 100%;
-}
-
-.lgslogo {
-    float: left;
-    margin-left: 0.6%;
-    margin-top: -0.6%;
-    font-family: 'M PLUS 1p', sans-serif;
-    color: white;
-    font-size: 26px;
-    font-weight: 800;
 }
 
 .main {
@@ -163,7 +147,7 @@ body {
 }
 
 .product:hover {
-    filter: brightness(80%);
+    filter: brightness(90%);
     transition: 0.3s;
     background-color: rgb(255, 255, 255);
 }
