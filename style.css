@@ -126,3 +126,46 @@ hr.rounded {
     text-decoration: none;
     color: #2a4366;
 }
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer h2 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ddd;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+    margin-top: 20px;
+}
