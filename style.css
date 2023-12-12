@@ -91,21 +91,12 @@ hr.rounded {
     margin-right: 15%;
 }
 
-.category1 {
+.category {
     margin-left: 15%;
     color: #2a4366;
     font-size: 30px;
     font-weight: 200;
     font-family: 'M PLUS 1p', sans-serif;
-}
-
-.category2 {
-    margin-top: 6%;
-    margin-left: 15%;
-    font-family: 'M PLUS 1p', sans-serif;
-    color: #2a4366;
-    font-size: 30px;
-    font-weight: 200;
 }
 
 body {
@@ -156,4 +147,24 @@ body {
     padding-top: 15px;
     border-top: 1px solid white;
     margin-top: 10px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product {
+    text-align: center;
+    margin: 0 -5 -5 -5;
+    flex: 0 0 22%;
+}
+
+.product img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0 0;
 }
