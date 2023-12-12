@@ -13,7 +13,7 @@
     padding-right: 10px
 }
 
-.left {
+.lgs {
     text-decoration: none;
     color: white;
     font-size: 25px;
@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.left:hover {
+.lgs:hover {
     color: #d1c9c9;
     transition: 0.3s ease-out;
 }
@@ -63,17 +63,7 @@
     width: 100%;
 }
 
-.lgslogo {
-    float: left;
-    margin-left: 0.6%;
-    margin-top: -0.6%;
-    font-family: 'M PLUS 1p', sans-serif;
-    color: white;
-    font-size: 26px;
-    font-weight: 800;
-}
-
-.main {
+.welcomemsg {
     margin-left: 15%;
     margin-top: 5%;
     margin-bottom: 4%;
@@ -90,7 +80,7 @@ hr.rounded {
     margin-right: 15%;
 }
 
-.categoryname {
+.category1 {
     margin-left: 15%;
     color: #2a4366;
     font-size: 30px;
@@ -98,51 +88,11 @@ hr.rounded {
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-.categoryname2 {
+.category2 {
     margin-top: 6%;
     margin-left: 15%;
     font-family: 'M PLUS 1p', sans-serif;
     color: #2a4366;
     font-size: 30px;
     font-weight: 200;
-}
-
-.productimg {
-    margin-right: 2.0%;
-    width: 22%;
-    height: 22%;
-    border-radius: 15px;
-}
-
-.container {
-    margin-top: 2%;
-    margin-left: 1%;
-    margin-right: 15%;
-    width: 100%;
-    text-align: center;
-}
-
-.textcontainer {
-    margin-left: 15%;
-}
-
-.productimg:hover {
-    filter: brightness(70%);
-    transition: 0.2s;
-}
-
-.viewmore {
-    width: 10%;
-    margin-bottom: -3%;
-    height: 10%;
-}
-
-
-.productdesc {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 23px;
-    margin-right: 16%;
-    width: 22%;
-    text-decoration: none;
-    color: #2a4366;
 }
