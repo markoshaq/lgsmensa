@@ -19,13 +19,13 @@
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 .navbutton:hover {
     background-color: #273e5d;
     transition: 0.3s ease-out;
     color: #d1c9c9;
+    box-shadow: 0px 0px 2px 1px lightgray;
 }
 
 .navbutton:not(hover) {
@@ -85,6 +85,11 @@ hr.rounded {
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+.category:active {
+    padding-left: 5px;
+    transition: 0.05s ease-out;
+}
+
 .categorylink {
     text-decoration: none;
 }
@@ -93,48 +98,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-.footer {
-    background-color: #2a4366;
-    color: #fff;
-    padding: 12px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.footer h2 {
-    color: #fff;
-}
-
-.footer p {
-    color: #ddd;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 15px;
-    border-top: 1px solid white;
-    margin-top: 10px;
 }
 
 .product-container {
@@ -157,6 +120,10 @@ body {
     box-shadow: 0px 0px 5px 2px lightgray;
 }
 
+.product:active {
+    box-shadow: 0px 0px 20px 2px lightgray;
+}
+
 .product:not(:hover) {
     filter: brightness(100%);
     transition: 0.3s;
@@ -172,4 +139,49 @@ body {
 .productname {
     font-family: 'M PLUS 1p', sans-serif;
     text-decoration: none;
+}
+
+/***** FOOTER *****/
+.footer {
+    margin-top: 60px;
+    background-color: #2a4366;
+    color: #fff;
+    padding: 10px 200px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid white;
+    margin-top: 10px;
 }
