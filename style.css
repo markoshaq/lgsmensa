@@ -85,6 +85,10 @@ hr.rounded {
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+.categorylink {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
