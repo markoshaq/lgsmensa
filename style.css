@@ -32,18 +32,6 @@
     transition: 0.3s ease-out;
 }
 
-.amogus {
-    position: absolute;
-    margin-top: 110px;
-    margin-left: 920px;
-    width: 80px;
-    opacity: 0;
-}
-
-.amogus:hover {
-    opacity: 1;
-}
-
 .navbutton:hover::after {
     width: 100%;
 }
