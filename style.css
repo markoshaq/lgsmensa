@@ -32,6 +32,10 @@
     transition: 0.3s ease-out;
 }
 
+.current {
+    filter: brightness(80%);
+}
+
 .navbutton:hover::after {
     width: 100%;
 }
