@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LGS Online-Mensa</title>
+    <title>Home | LGS Online-Mensa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+1p">
     <script src="path/to/confetti.min.js"></script>
@@ -11,66 +11,15 @@
 
 <body>
     <div class="nav">
-        <a class="navbutton left" href="#">LUDWIG-GEISSLER-SCHULE</a>
-        <a class="navbutton" href="/index.html">HOME</a>
-        <a class="navbutton current" href="#">BESTELLEN</a>
-        <a class="navbutton" href="#">FAQ</a>
+        <a class="navbutton left" href="/index.html">LUDWIG-GEISSLER-SCHULE</a>
+        <a class="navbutton current" href="/index.html">HOME</a>
+        <a class="navbutton" href="/bestellen.html">BESTELLEN</a>
+        <a class="navbutton" href="/faq.html">FAQ</a>
         <a class="navbutton" href="/kontakt.html">KONTAKT</a>
     </div>
 
     <div class="welcometext">
-        <h1>Willkommen in der  Online-Mensa der LGS!</h1>
-    </div>
-
-    <a class="categorylink" href="#aktuellbeliebt"><h1 id="aktuellbeliebt" class="category background">AKTUELL BELIEBT</h1></a>
-    <hr class="rounded">
-
-    <div class="product-container">
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductBurger.png" alt="Product Burger">
-            <p class="productname">Burger ⎯ 3,79€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductCroissant.png" alt="Product Croissant">
-            <p class="productname">Croissant ⎯ 0,70€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductBaklava.png" alt="Product Baklava">
-            <p class="productname">Baklava ⎯ 2,19€</p></a>
-        </div>
-    </div>
-
-    <a class="categorylink" href="#produkte"><h1 id="produkte" class="category">PRODUKTE</h1></a>
-    <hr class="rounded">
-
-    <div class="product-container">
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductBaguette.png" alt="Product Baguette">
-            <p class="productname">Baguette ⎯ 0,79€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductBroetchen.png" alt="Product Broetchen">
-            <p class="productname">Broetchen ⎯ 0,29€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductMuffin.png" alt="Product Muffin">
-            <p class="productname">Muffin ⎯ 0,99€</p></a>
-        </div>
-    </div>
-
-    <div class="product-container">
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductSimitring.png" alt="Product Simitring">
-            <p class="productname">Simit Ring ⎯ 0,59€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductZimtschnecke.png" alt="Product Zimtschecke">
-            <p class="productname">Zimtschnecke ⎯ 1,29€</p></a>
-        </div>
-        <div class="product">
-            <a class="productname" href="#"><img src="ProductDonut.png" alt="Product Donut">
-            <p class="productname">Donut ⎯ 0,99€</p></a>
-        </div>
+        <h1>Home</h1>
     </div>
 
     <div class="footer">
@@ -87,9 +36,9 @@
             <div class="footer-section links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Bestellen</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="/bestellen.html">Bestellen</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
@@ -97,19 +46,5 @@
             &copy; 2023 RMM-Software
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-        
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>

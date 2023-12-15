@@ -55,7 +55,6 @@
 .welcometext {
     margin-left: 15%;
     margin-top: 5%;
-    margin-bottom: 4%;
     color: #2a4366;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 800;
@@ -133,7 +132,7 @@ body {
     text-decoration: none;
 }
 
-/***** FOOTER *****/
+/* FOOTER */
 .footer {
     margin-top: 60px;
     background-color: #2a4366;
@@ -178,6 +177,7 @@ body {
     margin-top: 10px;
 }
 
+/* FAQ */
 input[type=text], select, textarea {
     width: 100%;
     padding: 8px; 
@@ -211,3 +211,34 @@ input[type=submit] {
     padding: 20px;
     font-family: 'M PLUS 1p', sans-serif;
   }
+
+  .faqcontainer {
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'M PLUS 1p', sans-serif;
+    transition: 0.5s ease-out;
+    margin-bottom: 15px;
+  }
+
+  .faqcontainer:hover {
+    background-color: #dddddd;
+  }
+
+  .summary {
+    font-weight: bold;
+  }
+
+  .accordion {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .faqpayimg {
+    width: 8%;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
