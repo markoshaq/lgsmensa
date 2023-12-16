@@ -1,8 +1,4 @@
-.nav {
-    display: flex;
-}
-
-.navbutton.left {
+.left {
     margin-right: auto;
 }
 
@@ -19,6 +15,25 @@
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.lgs {
+    font-family: 'M PLUS 1p', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    padding-left: 15px;
+}
+
+.lgs:hover {
+    color: lightgray;
+    transition: 0.3s;
+}
+
+.lgs:not(hover) {
+    color: white;
+    transition: 0.3s;
 }
 
 .navbutton:hover {
@@ -41,6 +56,7 @@
 }
 
 .nav {
+    display: flex;
     background-color: #2a4366;
     max-width: 100%;
     padding: 15px;
@@ -283,7 +299,6 @@ body, html {
 
 .herobutton:hover {
     transition: 0.3s ease-out;
-    padding: 20px;
     background-color: lightgray;
 }
 
@@ -291,3 +306,4 @@ body, html {
     transition: 0.3s ease-out;
     padding: 15px;
 }
+
