@@ -22,6 +22,10 @@ body, html {
     padding-right: 10px;
 }
 
+.navbutton:active {
+    transform: scale(0.90);
+}
+
 .lgs {
     font-family: 'M PLUS 1p', sans-serif;
     text-decoration: none;
@@ -34,6 +38,7 @@ body, html {
 .lgs:hover {
     color: lightgray;
     transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .lgs:not(hover) {
@@ -44,7 +49,7 @@ body, html {
 .navbutton:hover {
     background-color: #273e5d;
     transition: 0.3s ease-out;
-    color: #d1c9c9;
+    color: lightgray;
     box-shadow: 0px 0px 2px 1px lightgray;
 }
 
@@ -92,7 +97,7 @@ body, html {
 .welcometext {
     margin-left: 15%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     color: #2a4366;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 800;
@@ -115,7 +120,7 @@ hr.rounded {
 }
 
 .category:active {
-    padding-left: 5px;
+    transform:scale(0.99);
     transition: 0.05s ease-out;
 }
 
@@ -150,6 +155,7 @@ body {
 }
 
 .product:active {
+    transform: scale(0.98);
     box-shadow: 0px 0px 20px 2px lightgray;
 }
 
@@ -205,7 +211,7 @@ body {
 }
 
 .footer a:hover {
-    color: rgb(160, 160, 160);
+    color: lightgray;
     transition: 0.3s;
 }
 
@@ -251,7 +257,7 @@ input[type=submit] {
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: lightgray;
     padding: 20px;
     font-family: 'M PLUS 1p', sans-serif;
   }
@@ -260,7 +266,7 @@ input[type=submit] {
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: lightgray;
     padding: 20px;
     font-family: 'M PLUS 1p', sans-serif;
     transition: 0.5s ease-out;
@@ -268,7 +274,7 @@ input[type=submit] {
   }
 
   .faqcontainer:hover {
-    background-color: #dddddd;
+    background-color: lightgray;
   }
 
   .summary {
@@ -297,13 +303,17 @@ input[type=submit] {
 }
 
 .herobutton:hover {
-    transition: 0.3s ease-out;
     background-color: lightgray;
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
 }
 
 .herobutton:not(hover) {
     transition: 0.3s ease-out;
-    padding: 15px;
+}
+
+.nopointer {
+    pointer-events: none;
 }
 
 .mailhover:hover {
