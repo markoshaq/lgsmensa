@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 .left {
     margin-right: auto;
 }
@@ -47,6 +52,26 @@
     transition: 0.3s ease-out;
 }
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/LGSHero.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 36px;
+}
+
 .current {
     filter: brightness(80%);
 }
@@ -63,14 +88,11 @@
     text-align: right;
 }
 
-.body {
-    height: 100%;
-    width: 100%;
-}
 
 .welcometext {
     margin-left: 15%;
     margin-top: 5%;
+    margin-bottom: 5%;
     color: #2a4366;
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 800;
@@ -146,6 +168,7 @@ body {
 .productname {
     font-family: 'M PLUS 1p', sans-serif;
     text-decoration: none;
+    color: #2a4366;
 }
 
 /* FOOTER */
@@ -198,14 +221,14 @@ body {
     margin-top: 10px;
 }
 
-/* FAQ */
+/* KONTAKT */
 input[type=text], select, textarea {
     width: 100%;
     padding: 8px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-family: 'M PLUS 1p', sans-serif;
   }
 
@@ -262,30 +285,6 @@ input[type=submit] {
     border-radius: 15px;
     margin-top: 15px;
     margin-right: 5px;
-}
-
-body, html {
-    height: 100%;
-}
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/LGSHero.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'M PLUS 1p', sans-serif;
-  font-size: 36px;
 }
 
 .herobutton {
