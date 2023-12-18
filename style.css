@@ -57,7 +57,7 @@
 
 .nav {
     display: flex;
-    background-color: #2a4366;
+    background: linear-gradient(90deg, rgba(81,106,140,1) 0%, rgba(42,67,102,1) 35%, rgba(28,46,71,1) 100%);
     max-width: 100%;
     padding: 15px;
     text-align: right;
@@ -151,7 +151,7 @@ body {
 /* FOOTER */
 .footer {
     margin-top: 60px;
-    background-color: #2a4366;
+    background: linear-gradient(90deg, rgba(81,106,140,1) 0%, rgba(42,67,102,1) 35%, rgba(28,46,71,1) 100%);
     color: #fff;
     padding: 10px 200px;
     font-family: 'M PLUS 1p', sans-serif;
@@ -307,3 +307,12 @@ body, html {
     padding: 15px;
 }
 
+.mailhover:hover {
+    transition: 0.3s ease-out;
+    color: lightgray;
+}
+
+.mailhover:not(hover) {
+    transition: 0.3s ease-out;
+    color: white;
+}
