@@ -13,15 +13,21 @@ body, html {
     }
     .burgerImage {
         display: flex;
-        margin: auto;
+        margin: auto !important;
     }
     .ingredientsOverview {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    margin: 0 10% 0 10% !important;
-    
+    margin: 0 10% 0 10% !important;    
     color: #324c70;
+    }
+    .navbutton {
+        margin: 2px 0px 2px 0px !important;
+    }
+    .nav {
+        text-align: center !important;
+        flex-direction: column !important;
     }
   }
 .priceOwerview {
