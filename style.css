@@ -6,6 +6,88 @@ body, html {
 .left {
     margin-right: auto;
 }
+@media only screen and (max-width: 800px) {
+    .burgerOwerview {
+        display: flex;
+        flex-direction: column;
+    }
+    .burgerImage {
+        display: flex;
+        margin: auto;
+    }
+    .ingredientsOverview {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin: 0 10% 0 10% !important;
+    
+    color: #324c70;
+    }
+  }
+.priceOwerview {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 2%;
+    color: #2a4366;
+}
+
+.buttonsOverwiew {
+    display: grid;
+    justify-content: left;
+
+}
+.button {
+    background-color: #324c70;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-width: 0;
+}
+.button:hover  {
+    background-color: #4f76ae;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-width: 0;
+}
+.burgerOwerview {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+.burgerImage {
+    margin-left: 15%;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+.checked {
+    color: rgb(255, 204, 0);
+  }
+  .fa-star {
+     font-size: 20px;
+  }
+
+  .starRaiting {
+    display: flex;
+    justify-content: end;
+    margin-right: 17%;
+  }
+
+  .ingredientsOverview {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0% 40% 0% 15%;
+    color: #324c70;
+  }
 
 .navbutton {
     font-size: 16px;
@@ -104,7 +186,7 @@ body, html {
 }
 
 hr.rounded {
-    margin-top: -0.8%;
+    
     border-top: 3px solid #2a4366;
     border-radius: 15px;
     margin-left: 15%;
