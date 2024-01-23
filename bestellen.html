@@ -19,31 +19,70 @@
     </div>
 
     <div class="welcometext">
-        <h1 class="nopointer">Willkommen in der  Online-Mensa der LGS!</h1>
+        <h1 class="nopointer">Willkommen in der Online-Mensa der LGS!</h1>
+        <h3 class="guthaben" onclick="toggleTopUpInput()">Ihr Guthaben: <span id="current-balance">0,00€</span></h3>
+
+        <div id="top-up-input-container" style="display: none;">
+            <label for="top-up-amount">Guthaben aufladen:</label>
+            <input type="number" id="top-up-amount" min="0" step="0.01" placeholder="Summe eingeben">
+            <button onclick="topUpBalance()">Aufladen</button>
+        </div>
     </div>
+    
 
     <a class="categorylink" href="#aktuellbeliebt"><h1 id="aktuellbeliebt" class="category background">AKTUELL BELIEBT</h1></a>
     <hr class="rounded">
 
-    <div id="cart-details" class="cart-details"></div>
+    <div class="floating-cart-btn" onclick="toggleCart()">
+        <img class="shoppingcartimg" height="30" width="33" src="ShoppingCart.png"></img>
+    </div>
+    
+<div class="cart-sidebar">
+    <div class="close-btn" onclick="toggleCart()">X</div>
+    <h2 class="productname">Dein Einkaufswagen</h2>
+    <ul id="cart-items-sidebar"></ul>
+    <p class="einkaufswagen gesamtpreis" id="total-price">Gesamtpreis: 0.00€</p>
+    <div class="einkaufswagen zeit">
+        <p>Gewünschte Abholzeit:</p>
+        <label><input type="radio" name="pickup-time" value="7:40"> 7:40</label>
+        <label><input type="radio" name="pickup-time" value="9:15"> 9:15</label>
+        <label><input type="radio" name="pickup-time" value="11:05"> 11:05</label>
+        <label><input type="radio" name="pickup-time" value="12:55"> 12:55</label>
+        <label><input type="radio" name="pickup-time" value="15:05"> 15:05</label>
+    </div>
+    <button class="einkaufswagen" onclick="checkout()">Bestellen</button>
+</div>
+
+<div id="product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeProductModal()">&times;</span>
+        <h2 id="modal-product-name"></h2>
+        <label style="font-family: 'M PLUS 1p', sans-serif;" for="product-options">Ihre Auswahl:</label>
+        <select id="product-options">
+            <option value="standard">Standard</option>
+            <option value="vegan">Vegan</option>
+        </select>
+        <button>Hinzufügen</button>
+    </div>
+</div>
 
     <div class="product-container">
         <div class="product">
             <a class="productname">
-                <img src="ProductBurger.png" alt="Product Burger">
-                <p class="productname">Burger ⎯ 3,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px;" type="button" onclick="location.href='/productBurger.html';" value="Details"/></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBurger.png" alt="Product Burger">
+                <p class="productname">Burger ⎯ 3,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Burger')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductCroissant.png" alt="Product Croissant">
-                <p class="productname">Croissant ⎯ 0,70€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductCroissant.png" alt="Product Croissant">
+                <p class="productname">Croissant ⎯ 0,70€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Croissant')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBaklava.png" alt="Product Baklava">
-                <p class="productname">Baklava ⎯ 2,19€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBaklava.png" alt="Product Baklava">
+                <p class="productname">Baklava ⎯ 2,19€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Baklava')" value="Hinzufügen"/></p>
             </a>
         </div>
     </div>
@@ -54,20 +93,20 @@
     <div class="product-container">
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBaguette.png" alt="Product Baguette">
-                <p class="productname">Baguette ⎯ 0,79€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBaguette.png" alt="Product Baguette">
+                <p class="productname">Baguette ⎯ 0,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Baguette')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBroetchen.png" alt="Product Broetchen">
-                <p class="productname">Broetchen ⎯ 0,29€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBroetchen.png" alt="Product Broetchen">
+                <p class="productname">Broetchen ⎯ 0,29€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Broetchen')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductMuffin.png" alt="Product Muffin">
-                <p class="productname">Muffin ⎯ 0,99€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductMuffin.png" alt="Product Muffin">
+                <p class="productname">Muffin ⎯ 0,99€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Muffin')" value="Hinzufügen"/></p>
             </a>
         </div>
     </div>
@@ -75,20 +114,20 @@
     <div class="product-container">
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductSimitring.png" alt="Product Simitring">
-                <p class="productname">Simit Ring ⎯ 0,59€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductSimitring.png" alt="Product Simitring">
+                <p class="productname">Simit Ring ⎯ 0,59€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductZimtschnecke.png" alt="Product Zimtschecke">
-                <p class="productname">Zimtschnecke ⎯ 1,29€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductZimtschnecke.png" alt="Product Zimtschecke">
+                <p class="productname">Zimtschnecke ⎯ 1,29€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductDonut.png" alt="Product Donut">
-                <p class="productname">Donut ⎯ 0,99€ <a href="#" class="productdetails">Details</a></p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductDonut.png" alt="Product Donut">
+                <p class="productname">Donut ⎯ 0,99€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
     </div>
@@ -130,6 +169,36 @@
                 });
             });
         });
+
+        function toggleCart() {
+            var cartSidebar = document.querySelector('.cart-sidebar');
+            cartSidebar.style.right = cartSidebar.style.right === '0px' ? '-500px' : '0px';
+        }
+
+        function toggleTopUpInput() {
+            var topUpInputContainer = document.getElementById('top-up-input-container');
+            
+            topUpInputContainer.style.display = topUpInputContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function checkout() {
+                alert("Bitte fügen Sie Ihre gewünschten Produkte ein.");
+        }
+
+        function openProductModal(productName) {
+            var modal = document.getElementById('product-modal');
+            var modalProductName = document.getElementById('modal-product-name');
+
+            modalProductName.textContent = productName;
+
+            modal.style.display = 'block';
+        }
+
+        function closeProductModal() {
+            var modal = document.getElementById('product-modal');9842321
+
+            modal.style.display = 'none';
+        }
     </script>
 </body>
 </html>
