@@ -407,3 +407,13 @@ input[type=submit] {
     float: right;
     cursor: pointer;
 }
+
+.einkaufswagen {
+    margin-left: 5%;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.zeit {
+    margin-top: 50%;
+    margin-bottom: 3%;
+}
