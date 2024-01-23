@@ -21,6 +21,7 @@ body, html {
     flex-direction: column;
     margin: 0 10% 0 10% !important;    
     color: #324c70;
+    font-family: 'M PLUS 1p', sans-serif;
     }
     .navbutton {
         margin: 2px 0px 2px 0px !important;
@@ -472,7 +473,6 @@ input[type=submit] {
     margin-top: 2px;
 }
 
-/* Style for the modal */
 .modal {
     display: none;
     position: fixed;

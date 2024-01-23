@@ -22,7 +22,6 @@
         <h1 class="nopointer">Willkommen in der Online-Mensa der LGS!</h1>
         <h3 class="guthaben" onclick="toggleTopUpInput()">Ihr Guthaben: <span id="current-balance">0,00€</span></h3>
 
-        <!-- Add this HTML for the balance top-up input -->
         <div id="top-up-input-container" style="display: none;">
             <label for="top-up-amount">Guthaben aufladen:</label>
             <input type="number" id="top-up-amount" min="0" step="0.01" placeholder="Summe eingeben">
@@ -58,7 +57,7 @@
     <div class="modal-content">
         <span class="close" onclick="closeProductModal()">&times;</span>
         <h2 id="modal-product-name"></h2>
-        <label for="product-options">Ihre Auswahl:</label>
+        <label style="font-family: 'M PLUS 1p', sans-serif;" for="product-options">Ihre Auswahl:</label>
         <select id="product-options">
             <option value="standard">Standard</option>
             <option value="vegan">Vegan</option>
@@ -69,21 +68,21 @@
 
     <div class="product-container">
         <div class="product">
-            <a onclick="openProductModal('Burger')" class="productname">
-                <img src="ProductBurger.png" alt="Product Burger">
-                <p class="productname">Burger ⎯ 3,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px;" type="button" onclick="location.href='/productBurger.html';" value="Details"/></p>
+            <a class="productname">
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBurger.png" alt="Product Burger">
+                <p class="productname">Burger ⎯ 3,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Burger')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductCroissant.png" alt="Product Croissant">
-                <p class="productname">Croissant ⎯ 0,70€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductCroissant.png" alt="Product Croissant">
+                <p class="productname">Croissant ⎯ 0,70€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Croissant')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBaklava.png" alt="Product Baklava">
-                <p class="productname">Baklava ⎯ 2,19€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBaklava.png" alt="Product Baklava">
+                <p class="productname">Baklava ⎯ 2,19€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Baklava')" value="Hinzufügen"/></p>
             </a>
         </div>
     </div>
@@ -94,20 +93,20 @@
     <div class="product-container">
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBaguette.png" alt="Product Baguette">
-                <p class="productname">Baguette ⎯ 0,79€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBaguette.png" alt="Product Baguette">
+                <p class="productname">Baguette ⎯ 0,79€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Baguette')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductBroetchen.png" alt="Product Broetchen">
-                <p class="productname">Broetchen ⎯ 0,29€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductBroetchen.png" alt="Product Broetchen">
+                <p class="productname">Broetchen ⎯ 0,29€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Broetchen')" value="Hinzufügen"/></p>
             </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductMuffin.png" alt="Product Muffin">
-                <p class="productname">Muffin ⎯ 0,99€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductMuffin.png" alt="Product Muffin">
+                <p class="productname">Muffin ⎯ 0,99€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="openProductModal('Muffin')" value="Hinzufügen"/></p>
             </a>
         </div>
     </div>
@@ -115,20 +114,20 @@
     <div class="product-container">
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductSimitring.png" alt="Product Simitring">
-                <p class="productname">Simit Ring ⎯ 0,59€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductSimitring.png" alt="Product Simitring">
+                <p class="productname">Simit Ring ⎯ 0,59€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductZimtschnecke.png" alt="Product Zimtschecke">
-                <p class="productname">Zimtschnecke ⎯ 1,29€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductZimtschnecke.png" alt="Product Zimtschecke">
+                <p class="productname">Zimtschnecke ⎯ 1,29€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
         <div class="product">
             <a class="productname" href="#">
-                <img src="ProductDonut.png" alt="Product Donut">
-                <p class="productname">Donut ⎯ 0,99€</p>
+                <img style="cursor: pointer;" onclick="location.href='/productBurger.html';" src="ProductDonut.png" alt="Product Donut">
+                <p class="productname">Donut ⎯ 0,99€ <input style="padding: 5px; border-width: 0px; background-color: #476ca1; color: white; border-radius: 10px; cursor: pointer;" type="button" onclick="location.href='/productBurger.html';" value="Hinzufügen"/></p>
         </a>
         </div>
     </div>
@@ -171,137 +170,35 @@
             });
         });
 
-        // Move this script into your existing script.js file
+        function toggleCart() {
+            var cartSidebar = document.querySelector('.cart-sidebar');
+            cartSidebar.style.right = cartSidebar.style.right === '0px' ? '-500px' : '0px';
+        }
 
-function toggleCart() {
-    var cartSidebar = document.querySelector('.cart-sidebar');
-    cartSidebar.style.right = cartSidebar.style.right === '0px' ? '-500px' : '0px';
-}
-
-// Modify the addToCart function to update the cart sidebar
-function addToCart(productName, productPrice) {
-    // Create a new list item for the cart
-    var listItem = document.createElement('li');
-    listItem.textContent = `${productName} - $${productPrice.toFixed(2)}`;
-
-    // Add the item to the cart
-    document.getElementById('cart-items-sidebar').appendChild(listItem);
-
-    // After adding an item, show the cart sidebar
-    var cartSidebar = document.querySelector('.cart-sidebar');
-    cartSidebar.style.right = '0px';
-}
-
-function toggleCart() {
-    var cartSidebar = document.querySelector('.cart-sidebar');
-    cartSidebar.style.right = cartSidebar.style.right === '0px' ? '-500px' : '0px';
-}
-
-function toggleTopUpInput() {
-    var topUpInputContainer = document.getElementById('top-up-input-container');
-    
-    // Toggle the visibility of the top-up input container
-    topUpInputContainer.style.display = topUpInputContainer.style.display === 'none' ? 'block' : 'none';
-}
-
-function topUpBalance() {
-    var topUpAmount = parseFloat(document.getElementById('top-up-amount').value);
-
-    if (!isNaN(topUpAmount) && topUpAmount > 0) {
-        currentBalance += topUpAmount;
-
-        // Update the displayed Guthaben
-        document.getElementById('current-balance').textContent = currentBalance.toFixed(2) + '€';
-
-        // Hide the top-up input container after successful top-up
-        document.getElementById('top-up-input-container').style.display = 'none';
-
-        // Optionally, you can display a success message or perform other actions
-        alert(`Guthaben erfolgreich aufgeladen (${currentBalance.toFixed(2)}€)`);
-    } else {
-        alert("Bitte geben Sie Ihre gewünschte Summe ein.");
-    }
-}
-
-// Function to handle the checkout process
-function checkout() {
-    var totalCost = 0;
-    var items = document.getElementById('cart-items-sidebar').children;
-
-    // Calculate the total cost of the items in the cart
-    for (var i = 0; i < items.length; i++) {
-        var price = parseFloat(items[i].textContent.match(/(\d+\.\d{2})€/)[1]);
-        totalCost += price;
-    }
-
-    // Check if the cart is not empty and a time is selected
-    if (items.length > 0 && isTimeSelected()) {
-        // Check if there is enough Guthaben to cover the total cost
-        if (currentBalance >= totalCost) {
-            // Deduct the cost from the Guthaben
-            currentBalance -= totalCost;
-
-            // Display a confirmation message (you can customize this)
-            alert(`Order placed! Guthaben used: ${totalCost.toFixed(2)}€\nRemaining balance: ${currentBalance.toFixed(2)}€`);
+        function toggleTopUpInput() {
+            var topUpInputContainer = document.getElementById('top-up-input-container');
             
-            document.getElementById('current-balance').textContent = currentBalance.toFixed(2) + '€';
-            // Reset the cart
-            document.getElementById('cart-items-sidebar').innerHTML = '';
-            updateTotalPrice();
-        } else {
-            alert("Sie haben zu wenig Guthaben.");
+            topUpInputContainer.style.display = topUpInputContainer.style.display === 'none' ? 'block' : 'none';
         }
-    } else {
-        alert("Bitte fügen Sie Ihre gewünschten Produkte ein.");
-    }
-}
 
-// Function to check if a time is selected
-function isTimeSelected() {
-    var radioButtons = document.getElementsByName('pickup-time');
-
-    // Iterate through the radio buttons to check if one is selected
-    for (var i = 0; i < radioButtons.length; i++) {
-        if (radioButtons[i].checked) {
-            return true; // At least one radio button is selected
+        function checkout() {
+                alert("Bitte fügen Sie Ihre gewünschten Produkte ein.");
         }
-    }
 
-    return false; // No radio button is selected
-}
+        function openProductModal(productName) {
+            var modal = document.getElementById('product-modal');
+            var modalProductName = document.getElementById('modal-product-name');
 
-// Function to open the product modal
-function openProductModal(productName) {
-    var modal = document.getElementById('product-modal');
-    var modalProductName = document.getElementById('modal-product-name');
+            modalProductName.textContent = productName;
 
-    // Set the product name in the modal
-    modalProductName.textContent = productName;
+            modal.style.display = 'block';
+        }
 
-    // Display the modal
-    modal.style.display = 'block';
-}
+        function closeProductModal() {
+            var modal = document.getElementById('product-modal');9842321
 
-// Function to close the product modal
-function closeProductModal() {
-    var modal = document.getElementById('product-modal');9842321
-
-    // Hide the modal
-    modal.style.display = 'none';
-}
-
-// Function to add the selected product to the cart
-function addToCart() {
-    var selectedOption = document.getElementById('product-options').value;
-
-    // Here, you can add logic to handle the selected option and add it to the cart
-
-    // For demonstration purposes, let's just log the selected option to the console
-    console.log('Selected Option:', selectedOption);
-
-    // Close the modal after adding to the cart (you can adjust this based on your flow)
-    closeProductModal();
-}
+            modal.style.display = 'none';
+        }
     </script>
 </body>
 </html>
